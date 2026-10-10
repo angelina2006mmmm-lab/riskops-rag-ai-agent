@@ -1,0 +1,5 @@
+{"question":"Какие пороги downtime_minutes и как классифицируется простой?","expected_source":"01_operational_policy.md"}
+{"question":"Как оценивать выбросы CO2e по учебной шкале ESG?","expected_source":"02_esg_policy.md"}
+{"question":"Что значит интегрированный риск и зачем нужны источники?","expected_source":"03_integrated_risks.md"}
+{"question":"Как регистрировать инцидент и анализировать журналы?","expected_source":"04_incident_workflow.md"}
+{"question":"Как хранить ключи доступа к LLM?","expected_source":"05_llm_safety.md"}

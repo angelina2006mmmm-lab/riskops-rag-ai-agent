@@ -1,0 +1,16 @@
+{
+  "downtime_minutes": {
+    "label": "Длительность простоя",
+    "unit": "мин",
+    "medium_from": 30,
+    "high_from": 120,
+    "source": "01_operational_policy.md"
+  },
+  "emissions_tons": {
+    "label": "Условные выбросы CO2e",
+    "unit": "т",
+    "medium_from": 20,
+    "high_from": 50,
+    "source": "02_esg_policy.md"
+  }
+}
