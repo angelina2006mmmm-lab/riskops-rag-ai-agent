@@ -1,0 +1,13 @@
+{
+  "model": "roneneldan/TinyStories-1M",
+  "method": "grouped relative policy update on pretrained LM logits",
+  "action_space": "two constrained next-token responses: yes/no",
+  "training_prompts": 2,
+  "heldout_prompts": 2,
+  "group_size": 6,
+  "steps": 65,
+  "heldout_accuracy_before": 0.5,
+  "heldout_accuracy_after": 0.5,
+  "limitations": "Not TRL GRPOTrainer, no open-ended generation, no evidence of improved LLM reasoning.",
+  "source_run": "https://github.com/angelina2006mmmm-lab/riskops-rag-ai-agent/actions/runs/38253124372"
+}
