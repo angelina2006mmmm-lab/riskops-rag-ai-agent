@@ -47,7 +47,8 @@ def train(max_steps=4,report_path="reports/grpo_trl_smoke.json"):
     trainer=GRPOTrainer(model=MODEL,reward_funcs=reward,args=args,
                         train_dataset=Dataset.from_list(SAMPLES),
                         processing_class=tok)
-    outcome=trainer.train()\n    if int(outcome.global_step)<1:raise RuntimeError("GRPO optimizer did not complete")
+    outcome=trainer.train()
+    if int(outcome.global_step)<1:raise RuntimeError("GRPO optimizer did not complete")
     result={"trainer":"trl.GRPOTrainer","model":MODEL,"steps":int(outcome.global_step),
             "train_loss":float(outcome.training_loss),
             "samples":len(SAMPLES),"num_generations":2,
