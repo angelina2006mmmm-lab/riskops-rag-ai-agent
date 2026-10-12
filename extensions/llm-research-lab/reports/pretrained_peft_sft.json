@@ -1,0 +1,16 @@
+{
+  "base_model": "roneneldan/TinyStories-1M",
+  "checkpoint_type": "public pretrained tiny GPT-Neo / TinyStories weights",
+  "method": "Hugging Face PEFT LoRA supervised fine-tuning",
+  "train_examples": 4,
+  "heldout_examples": 2,
+  "steps": 65,
+  "trainable_parameters": 8192,
+  "total_parameters": 3754176,
+  "heldout_loss_before": 14.86255,
+  "heldout_loss_after": 2.97834,
+  "last_train_loss": 1.04242,
+  "limitations": "Tiny pretrained checkpoint + synthetic prompts; no production LLM performance claim.",
+  "source_run": "https://github.com/angelina2006mmmm-lab/riskops-rag-ai-agent/actions/runs/38253124372",
+  "note": "Training/evaluation steps passed; overall workflow failed only at pushing generated results due concurrent branch update."
+}
