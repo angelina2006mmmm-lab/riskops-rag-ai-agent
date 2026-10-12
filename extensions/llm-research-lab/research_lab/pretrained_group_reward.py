@@ -6,8 +6,8 @@ Two possible next tokens (' yes'/' no'), not free-form reasoning or full TRL GRP
 import argparse,json
 from pathlib import Path
 
-MODEL_ID="sshleifer/tiny-gpt2"
-def experiment(steps=50,output="reports/pretrained_group_reward.json"):
+MODEL_ID="roneneldan/TinyStories-1M"
+def experiment(steps=65,output="reports/pretrained_group_reward.json"):
  import torch
  from transformers import AutoTokenizer,AutoModelForCausalLM
  from peft import LoraConfig,TaskType,get_peft_model
@@ -32,8 +32,8 @@ def experiment(steps=50,output="reports/pretrained_group_reward.json"):
  with torch.no_grad():
   reference_train=torch.log_softmax(select_logits(base,train_prompts),dim=-1)
  peft=get_peft_model(base,LoraConfig(task_type=TaskType.CAUSAL_LM,
-      r=4,lora_alpha=8,lora_dropout=0.0,target_modules=["c_attn"],
-      fan_in_fan_out=True,bias="none"))
+      r=4,lora_alpha=8,lora_dropout=0.0,target_modules=["q_proj","v_proj"],
+      fan_in_fan_out=False,bias="none"))
  optimizer=torch.optim.AdamW((x for x in peft.parameters() if x.requires_grad),lr=.006)
  def accuracy():
   peft.eval()
@@ -68,7 +68,7 @@ def experiment(steps=50,output="reports/pretrained_group_reward.json"):
  print(json.dumps(result,indent=2));return result
 if __name__=="__main__":
  parser=argparse.ArgumentParser()
- parser.add_argument("--steps",type=int,default=50)
+ parser.add_argument("--steps",type=int,default=65)
  parser.add_argument("--output",default="reports/pretrained_group_reward.json")
  args=parser.parse_args()
  experiment(args.steps,args.output)
