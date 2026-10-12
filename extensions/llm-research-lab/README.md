@@ -42,3 +42,24 @@ python -m pytest -q tests/test_graph_and_algorithms.py -k real_langgraph
 - Toy SFT is low-rank updating the LM head of a tiny model trained from scratch; no full pretrained-model LoRA/SFT, no real tokenizer such as BPE or SentencePiece.
 - Grouped RL demo has only a two-action policy; not actual LLM reasoning improvement.
 - Next: verify LangGraph runtime, run PEFT/LoRA on a genuine pretrained open model with a held-out dataset, integrate real generation and build GraphRAG evaluation over larger corpora; compare methods transparently.
+
+
+## Verified integrations and pretrained-language-model experiments (October 2026)
+
+The following were **executed on GitHub Actions**, not just saved as scripts:
+
+| Component | Execution | What it proves (and doesn't) |
+|---|---|---|
+| [Version-aware GraphRAG-like agent with LangGraph](research_lab/agentic_graph_rag.py) | [Integration CI passed](https://github.com/angelina2006mmmm-lab/riskops-rag-ai-agent/actions/runs/38251970601) | Real StateGraph routing, versioned graph retrieval, citations and abstain. No generative model in this first workflow |
+| [Graph-enhanced RAG + actual pretrained generation](research_lab/graph_rag_llm.py) | [Generation CI passed](https://github.com/angelina2006mmmm-lab/riskops-rag-ai-agent/actions/runs/38253376624) | A real TinyStories-1M causal LM receives synthetic retrieved text and generates a draft; sources are verified and appended. No manual answer-quality benchmark |
+| [PEFT LoRA SFT of pretrained TinyStories-1M](research_lab/pretrained_peft_sft.py) | [Pretrained training CI passed](https://github.com/angelina2006mmmm-lab/riskops-rag-ai-agent/actions/runs/38253843710) | 65 steps, 8,192 trainable adapter parameters. Held-out token loss **14.86255 → 2.97834** on *only 2 synthetic prompts*. [Machine-readable metrics](reports/pretrained_peft_sft.json) |
+| [Group-relative reward updates on pretrained TinyStories-1M](research_lab/pretrained_group_reward.py) | [Training CI passed](https://github.com/angelina2006mmmm-lab/riskops-rag-ai-agent/actions/runs/38253843710) | Constrained **yes/no** next-token policy, grouped advantages, clipping and KL. Holdout accuracy **0.5 → 0.5** (no observed improvement). [Machine-readable metrics](reports/pretrained_group_reward.json) |
+
+**Precisely what remains outside scope:** enterprise-scale GraphRAG, reliable autonomous multi-step LLM agents, actual RLHF/TRL-GRPO of full free-form reasoning, production evaluation, red teaming, human/financial datasets. The synthetic SFT holdout contains only two prompts: improving its loss does not imply better real-world answers.
+
+### Reproduce the GitHub Actions results
+
+- [Run LangGraph graph-integrated tests](../../.github/workflows/llm-real-llm-checks.yml)
+- [Run retrieval + real generation CI](../../.github/workflows/llm-graph-generation.yml)
+- [Run PEFT LoRA SFT and group-relative rewards](../../.github/workflows/llm-pretrained-research.yml)
+
