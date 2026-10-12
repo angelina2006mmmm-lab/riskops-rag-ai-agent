@@ -1,0 +1,14 @@
+{
+  "pretrained_model": "roneneldan/TinyStories-1M",
+  "method": "constrained group-relative policy gradient, clipped ratio and KL",
+  "train_prompts": 6,
+  "holdout_prompts": 4,
+  "group_size": 8,
+  "steps": 120,
+  "train_accuracy_before": 0.5,
+  "train_accuracy_after": 1,
+  "heldout_accuracy_before": 0.5,
+  "heldout_accuracy_after": 1,
+  "limitations": "Two constrained next-token actions, tiny pretrained model, hand-crafted task; not full GRPOTrainer and not LLM reasoning quality.",
+  "source_run": "https://github.com/angelina2006mmmm-lab/riskops-rag-ai-agent/actions/runs/38254085807"
+}
