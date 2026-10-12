@@ -1,0 +1,1 @@
+"""Synthetic operational risk agent."""
