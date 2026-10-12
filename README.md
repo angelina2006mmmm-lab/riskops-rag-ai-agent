@@ -4,7 +4,7 @@
 
 **[LLM Engineering Readiness: Python SOLID/DI, FastAPI, Docker, Langfuse SDK v4, TRL GRPO smoke & GPU-ready example scripts](extensions/llm-engineering-readiness/README.md)**
 
-[CI: 8 tests + Docker image build and running container smoke test](https://github.com/angelina2006mmmm-lab/riskops-rag-ai-agent/actions/runs/38305842529). **TRL GRPOTrainer** completed a [one-step CPU smoke test](https://github.com/angelina2006mmmm-lab/riskops-rag-ai-agent/actions/runs/38305842262) on tiny GPT-2; further experiments are exploratory, **not evidence of improved reasoning**. vLLM/Unsloth are **GPU scripts not executed**, while Langfuse uses a test client without SaaS trace ingestion. All content is synthetic.
+[CI: 8 tests + Docker image build and running container smoke test](https://github.com/angelina2006mmmm-lab/riskops-rag-ai-agent/actions/runs/38305842529). **TRL GRPOTrainer** completed a [four-step CPU smoke test](https://github.com/angelina2006mmmm-lab/riskops-rag-ai-agent/actions/runs/38306359894) on tiny GPT-2; further experiments are exploratory, **not evidence of improved reasoning**. vLLM/Unsloth are **GPU scripts not executed**, while Langfuse uses a test client without SaaS trace ingestion. All content is synthetic.
 
 
 ## Latest: LLM Agent Quality & Safety

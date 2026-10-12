@@ -24,3 +24,7 @@ python -m gpu.vllm_demo
 python -m gpu.unsloth_demo
 ```
 Install vLLM or Unsloth in a compatible CUDA environment first. A script or import does **not** prove inference, successful fine-tuning, production throughput or usable GPU experience.
+
+## Verified GRPO smoke (not model-quality validation)
+
+[TRL GRPOTrainer — 4 actual CPU optimizer steps](https://github.com/angelina2006mmmm-lab/riskops-rag-ai-agent/actions/runs/38306359894) using pretrained `sshleifer/tiny-gpt2`, four synthetic prompts and two generations per prompt. Training loss recorded in [metrics JSON](reports/grpo_trl_smoke.json). This does not establish an improvement in reasoning or readiness for business decisions.

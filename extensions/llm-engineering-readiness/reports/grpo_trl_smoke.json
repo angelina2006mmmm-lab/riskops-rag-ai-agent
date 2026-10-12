@@ -1,0 +1,10 @@
+{
+  "trainer": "trl.GRPOTrainer",
+  "model": "sshleifer/tiny-gpt2",
+  "steps": 4,
+  "train_loss": 1.2293458218071152e-7,
+  "samples": 4,
+  "num_generations": 2,
+  "scope": "CPU smoke test on synthetic prompts; no general reasoning improvements shown",
+  "verified_ci": "https://github.com/angelina2006mmmm-lab/riskops-rag-ai-agent/actions/runs/38306359894"
+}
