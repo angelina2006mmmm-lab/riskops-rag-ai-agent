@@ -1,0 +1,17 @@
+{
+  "description": "RNN vs Transformer on synthetic 8-step token sequences; no pretraining",
+  "train": 1500,
+  "validation": 400,
+  "test": 500,
+  "epochs": 7,
+  "RNN": {
+    "validation_accuracy": 0.905,
+    "test_accuracy": 0.916,
+    "parameters": 782
+  },
+  "TransformerEncoder": {
+    "validation_accuracy": 1,
+    "test_accuracy": 1,
+    "parameters": 3394
+  }
+}

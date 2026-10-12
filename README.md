@@ -1,5 +1,12 @@
 # RiskOps RAG + AI Agent
 
+## New: LLM Research Lab — reproducible synthetic research
+
+**[LLM Research Lab: graph-based retrieval, RNN/Transformer, toy LoRA-SFT, grouped reward RL, algorithms](extensions/llm-research-lab/README.md)**
+
+This is an educational reproducible set of small experiments. It **does not claim** pretrained-LLM SFT/GRPO, full GraphRAG production architecture, actual LLM reasoning improvements or production LangGraph integration. Evaluation is strictly synthetic.
+
+
 ## Портфолио LLM / AI Agent / Operational Risk
 
 Три независимых учебных прототипа для демонстрации Python, защиты AI-сервисов, проверки источников и тестирования:

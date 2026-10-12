@@ -1,0 +1,27 @@
+name: LLM Research Lab tests
+on:
+  push:
+    paths:
+      - 'extensions/llm-research-lab/**'
+      - '.github/workflows/llm-research-lab.yml'
+  pull_request:
+    paths:
+      - 'extensions/llm-research-lab/**'
+  workflow_dispatch:
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: extensions/llm-research-lab
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install -r requirements.txt
+      - run: python -m pytest -q
+      - run: python -m research_lab.graph_rag
+      - run: python -m research_lab.neural_baselines
+      - run: python -m research_lab.toy_lora_sft
+      - run: python -m research_lab.group_relative_rl

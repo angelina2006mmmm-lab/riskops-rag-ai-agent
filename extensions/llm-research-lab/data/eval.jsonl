@@ -1,0 +1,10 @@
+{"question":"supplier outage","as_of":"2025-08-01","expected_status":"grounded","expected_source":"SUP-01"}
+{"question":"supplier outage","as_of":"2026-10-01","expected_status":"grounded","expected_source":"SUP-01"}
+{"question":"fraud","as_of":"2026-10-01","expected_status":"grounded","expected_source":"FRA-01"}
+{"question":"audit","as_of":"2026-10-01","expected_status":"grounded","expected_source":"AUD-01"}
+{"question":"credit","as_of":"2026-10-01","expected_status":"grounded","expected_source":"CRD-01"}
+{"question":"esg","as_of":"2026-10-01","expected_status":"grounded","expected_source":"ESG-01"}
+{"question":"liquidity","as_of":"2026-10-01","expected_status":"grounded","expected_source":"COR-01"}
+{"question":"incident","as_of":"2026-10-01","expected_status":"grounded","expected_source":"INC-02"}
+{"question":"unknown_ontology","as_of":"2026-10-01","expected_status":"abstain"}
+{"question":"","as_of":"2026-10-01","expected_status":"abstain"}

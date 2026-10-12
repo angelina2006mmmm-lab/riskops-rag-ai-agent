@@ -1,0 +1,8 @@
+{
+  "method": "group-relative advantage, clipped surrogate, KL reference (toy)",
+  "before_accuracy": 0.504,
+  "after_accuracy": 0.9987,
+  "steps": 120,
+  "group_size": 5,
+  "limitations": "numeric classification, not a full GRPO implementation or LLM reasoning experiment"
+}

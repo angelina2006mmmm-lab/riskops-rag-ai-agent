@@ -1,0 +1,11 @@
+{
+  "pretraining": "tiny locally trained causal Transformer, synthetic text",
+  "adapter": "manual low-rank output-head tuning with frozen backbone",
+  "sft_examples": 4,
+  "heldout_prompts": 2,
+  "heldout_token_loss_before": 6.2487,
+  "heldout_token_loss_after": 0.6648,
+  "pretrain_steps": 65,
+  "sft_steps": 100,
+  "limitations": "Not fine-tuning a downloaded pretrained LLM, not PEFT/QLoRA"
+}

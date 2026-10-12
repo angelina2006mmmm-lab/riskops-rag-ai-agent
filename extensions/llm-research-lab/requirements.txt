@@ -1,0 +1,3 @@
+torch>=2.2
+pytest>=8
+# Optional for StateGraph integration: langgraph>=0.6
