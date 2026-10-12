@@ -17,9 +17,9 @@ SAMPLES=[
 def reward(completions,expected,**kwargs):
     """Simple token matching; deliberately not a sophisticated reward model."""
     assert len(completions)==len(expected)
-    return [float(target in str(comp).lower()) for comp,target in zip(completions,expected)]
+    return [float(target in str(comp).lower()) + 0.1 * len(set(str(comp).strip().lower())) / max(1, len(str(comp).strip())) for comp,target in zip(completions,expected)]
 
-def train(max_steps=1,report_path="reports/grpo_trl_smoke.json"):
+def train(max_steps=4,report_path="reports/grpo_trl_smoke.json"):
     import torch
     from datasets import Dataset
     from transformers import AutoTokenizer
@@ -47,7 +47,7 @@ def train(max_steps=1,report_path="reports/grpo_trl_smoke.json"):
     trainer=GRPOTrainer(model=MODEL,reward_funcs=reward,args=args,
                         train_dataset=Dataset.from_list(SAMPLES),
                         processing_class=tok)
-    outcome=trainer.train()
+    outcome=trainer.train()\n    if int(outcome.global_step)<1:raise RuntimeError("GRPO optimizer did not complete")
     result={"trainer":"trl.GRPOTrainer","model":MODEL,"steps":int(outcome.global_step),
             "train_loss":float(outcome.training_loss),
             "samples":len(SAMPLES),"num_generations":2,
@@ -57,4 +57,4 @@ def train(max_steps=1,report_path="reports/grpo_trl_smoke.json"):
     print(json.dumps(result,indent=2))
     return result
 
-if __name__=="__main__":train(max_steps=int(os.environ.get("GRPO_STEPS","1")))
+if __name__=="__main__":train(max_steps=int(os.environ.get("GRPO_STEPS","4")))
