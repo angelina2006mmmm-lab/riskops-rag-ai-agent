@@ -31,3 +31,19 @@ Request: POST http://localhost:8000/assess
 - Keyword guardrail is incomplete against adaptive prompt injection.
 - Not GraphRAG, not an autonomous agent, no real corporate/bank data.
 - Next: real-model integration, held-out human-evaluated document sets, prompt-injection attack suite, monitoring/tracing, security review.
+
+
+## Demo monitoring and containerization
+
+The demo `GET /metrics` endpoint reports per-process counts by outcome (`grounded`, `blocked`, `abstain`), average/max processing latency in milliseconds, and number of processed requests. No question text, numeric input, personal information or document excerpts are included in these counters. The counters reset when the server restarts and are **not Langfuse or production observability**.
+
+```bash
+docker compose up --build
+# API: http://127.0.0.1:8000/docs
+# GET http://127.0.0.1:8000/metrics
+docker compose down
+```
+
+A sample `Dockerfile` and localhost-bound Compose configuration are included. Image build/deploy was not executed in the authoring environment; install Docker to verify it locally.
+
+**After instrumentation:** 19 unit/API tests passed locally; the original 12 synthetic scenario checks still passed. These test counts describe deterministic functional checks, not the performance of an LLM.
