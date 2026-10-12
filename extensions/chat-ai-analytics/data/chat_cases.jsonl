@@ -1,0 +1,100 @@
+{"case_id":"balance_01","text":"Какой баланс по карте?","intent":"balance","priority":"normal"}
+{"case_id":"balance_02","text":"Сколько денег осталось?","intent":"balance","priority":"normal"}
+{"case_id":"balance_03","text":"Какой остаток на счете?","intent":"balance","priority":"normal"}
+{"case_id":"balance_04","text":"Сколько на карте сейчас?","intent":"balance","priority":"normal"}
+{"case_id":"balance_05","text":"Доступно средств сколько?","intent":"balance","priority":"normal"}
+{"case_id":"balance_06","text":"Какой баланс по карте? Подскажите, пожалуйста.","intent":"balance","priority":"normal"}
+{"case_id":"balance_07","text":"Сколько денег осталось? Подскажите, пожалуйста.","intent":"balance","priority":"normal"}
+{"case_id":"balance_08","text":"Какой остаток на счете? Подскажите, пожалуйста.","intent":"balance","priority":"normal"}
+{"case_id":"balance_09","text":"Сколько на карте сейчас? Подскажите, пожалуйста.","intent":"balance","priority":"normal"}
+{"case_id":"balance_10","text":"Доступно средств сколько? Подскажите, пожалуйста.","intent":"balance","priority":"normal"}
+{"case_id":"balance_11","text":"Какой баланс по карте? Нужна помощь.","intent":"balance","priority":"normal"}
+{"case_id":"balance_12","text":"Сколько денег осталось? Нужна помощь.","intent":"balance","priority":"normal"}
+{"case_id":"balance_13","text":"Какой остаток на счете? Нужна помощь.","intent":"balance","priority":"normal"}
+{"case_id":"balance_14","text":"Сколько на карте сейчас? Нужна помощь.","intent":"balance","priority":"normal"}
+{"case_id":"balance_15","text":"Доступно средств сколько? Нужна помощь.","intent":"balance","priority":"normal"}
+{"case_id":"balance_16","text":"Какой баланс по карте? Срочно!","intent":"balance","priority":"normal"}
+{"case_id":"balance_17","text":"Сколько денег осталось? Срочно!","intent":"balance","priority":"normal"}
+{"case_id":"balance_18","text":"Какой остаток на счете? Срочно!","intent":"balance","priority":"normal"}
+{"case_id":"balance_19","text":"Сколько на карте сейчас? Срочно!","intent":"balance","priority":"normal"}
+{"case_id":"balance_20","text":"Доступно средств сколько? Срочно!","intent":"balance","priority":"normal"}
+{"case_id":"card_block_01","text":"Хочу заблокировать карту","intent":"card_block","priority":"urgent"}
+{"case_id":"card_block_02","text":"Потеряла карту","intent":"card_block","priority":"urgent"}
+{"case_id":"card_block_03","text":"У меня украли карту","intent":"card_block","priority":"urgent"}
+{"case_id":"card_block_04","text":"Нужно заморозить карту","intent":"card_block","priority":"urgent"}
+{"case_id":"card_block_05","text":"Пропала банковская карта","intent":"card_block","priority":"urgent"}
+{"case_id":"card_block_06","text":"Хочу заблокировать карту Подскажите, пожалуйста.","intent":"card_block","priority":"urgent"}
+{"case_id":"card_block_07","text":"Потеряла карту Подскажите, пожалуйста.","intent":"card_block","priority":"urgent"}
+{"case_id":"card_block_08","text":"У меня украли карту Подскажите, пожалуйста.","intent":"card_block","priority":"urgent"}
+{"case_id":"card_block_09","text":"Нужно заморозить карту Подскажите, пожалуйста.","intent":"card_block","priority":"urgent"}
+{"case_id":"card_block_10","text":"Пропала банковская карта Подскажите, пожалуйста.","intent":"card_block","priority":"urgent"}
+{"case_id":"card_block_11","text":"Хочу заблокировать карту Нужна помощь.","intent":"card_block","priority":"urgent"}
+{"case_id":"card_block_12","text":"Потеряла карту Нужна помощь.","intent":"card_block","priority":"urgent"}
+{"case_id":"card_block_13","text":"У меня украли карту Нужна помощь.","intent":"card_block","priority":"urgent"}
+{"case_id":"card_block_14","text":"Нужно заморозить карту Нужна помощь.","intent":"card_block","priority":"urgent"}
+{"case_id":"card_block_15","text":"Пропала банковская карта Нужна помощь.","intent":"card_block","priority":"urgent"}
+{"case_id":"card_block_16","text":"Хочу заблокировать карту Срочно!","intent":"card_block","priority":"urgent"}
+{"case_id":"card_block_17","text":"Потеряла карту Срочно!","intent":"card_block","priority":"urgent"}
+{"case_id":"card_block_18","text":"У меня украли карту Срочно!","intent":"card_block","priority":"urgent"}
+{"case_id":"card_block_19","text":"Нужно заморозить карту Срочно!","intent":"card_block","priority":"urgent"}
+{"case_id":"card_block_20","text":"Пропала банковская карта Срочно!","intent":"card_block","priority":"urgent"}
+{"case_id":"transfer_status_01","text":"Где мой перевод?","intent":"transfer_status","priority":"normal"}
+{"case_id":"transfer_status_02","text":"Отправила деньги, дошли?","intent":"transfer_status","priority":"normal"}
+{"case_id":"transfer_status_03","text":"Транзакция прошла или нет?","intent":"transfer_status","priority":"normal"}
+{"case_id":"transfer_status_04","text":"Деньги не поступили адресату","intent":"transfer_status","priority":"normal"}
+{"case_id":"transfer_status_05","text":"Ушли деньги, но не дошли","intent":"transfer_status","priority":"normal"}
+{"case_id":"transfer_status_06","text":"Где мой перевод? Подскажите, пожалуйста.","intent":"transfer_status","priority":"normal"}
+{"case_id":"transfer_status_07","text":"Отправила деньги, дошли? Подскажите, пожалуйста.","intent":"transfer_status","priority":"normal"}
+{"case_id":"transfer_status_08","text":"Транзакция прошла или нет? Подскажите, пожалуйста.","intent":"transfer_status","priority":"normal"}
+{"case_id":"transfer_status_09","text":"Деньги не поступили адресату Подскажите, пожалуйста.","intent":"transfer_status","priority":"normal"}
+{"case_id":"transfer_status_10","text":"Ушли деньги, но не дошли Подскажите, пожалуйста.","intent":"transfer_status","priority":"normal"}
+{"case_id":"transfer_status_11","text":"Где мой перевод? Нужна помощь.","intent":"transfer_status","priority":"normal"}
+{"case_id":"transfer_status_12","text":"Отправила деньги, дошли? Нужна помощь.","intent":"transfer_status","priority":"normal"}
+{"case_id":"transfer_status_13","text":"Транзакция прошла или нет? Нужна помощь.","intent":"transfer_status","priority":"normal"}
+{"case_id":"transfer_status_14","text":"Деньги не поступили адресату Нужна помощь.","intent":"transfer_status","priority":"normal"}
+{"case_id":"transfer_status_15","text":"Ушли деньги, но не дошли Нужна помощь.","intent":"transfer_status","priority":"normal"}
+{"case_id":"transfer_status_16","text":"Где мой перевод? Срочно!","intent":"transfer_status","priority":"normal"}
+{"case_id":"transfer_status_17","text":"Отправила деньги, дошли? Срочно!","intent":"transfer_status","priority":"normal"}
+{"case_id":"transfer_status_18","text":"Транзакция прошла или нет? Срочно!","intent":"transfer_status","priority":"normal"}
+{"case_id":"transfer_status_19","text":"Деньги не поступили адресату Срочно!","intent":"transfer_status","priority":"normal"}
+{"case_id":"transfer_status_20","text":"Ушли деньги, но не дошли Срочно!","intent":"transfer_status","priority":"normal"}
+{"case_id":"loan_payment_01","text":"Когда платёж по кредиту?","intent":"loan_payment","priority":"normal"}
+{"case_id":"loan_payment_02","text":"Хочу погасить займ","intent":"loan_payment","priority":"normal"}
+{"case_id":"loan_payment_03","text":"В какой день следующий взнос?","intent":"loan_payment","priority":"normal"}
+{"case_id":"loan_payment_04","text":"Где посмотреть погашение?","intent":"loan_payment","priority":"normal"}
+{"case_id":"loan_payment_05","text":"Вопрос по рассрочке","intent":"loan_payment","priority":"normal"}
+{"case_id":"loan_payment_06","text":"Когда платёж по кредиту? Подскажите, пожалуйста.","intent":"loan_payment","priority":"normal"}
+{"case_id":"loan_payment_07","text":"Хочу погасить займ Подскажите, пожалуйста.","intent":"loan_payment","priority":"normal"}
+{"case_id":"loan_payment_08","text":"В какой день следующий взнос? Подскажите, пожалуйста.","intent":"loan_payment","priority":"normal"}
+{"case_id":"loan_payment_09","text":"Где посмотреть погашение? Подскажите, пожалуйста.","intent":"loan_payment","priority":"normal"}
+{"case_id":"loan_payment_10","text":"Вопрос по рассрочке Подскажите, пожалуйста.","intent":"loan_payment","priority":"normal"}
+{"case_id":"loan_payment_11","text":"Когда платёж по кредиту? Нужна помощь.","intent":"loan_payment","priority":"normal"}
+{"case_id":"loan_payment_12","text":"Хочу погасить займ Нужна помощь.","intent":"loan_payment","priority":"normal"}
+{"case_id":"loan_payment_13","text":"В какой день следующий взнос? Нужна помощь.","intent":"loan_payment","priority":"normal"}
+{"case_id":"loan_payment_14","text":"Где посмотреть погашение? Нужна помощь.","intent":"loan_payment","priority":"normal"}
+{"case_id":"loan_payment_15","text":"Вопрос по рассрочке Нужна помощь.","intent":"loan_payment","priority":"normal"}
+{"case_id":"loan_payment_16","text":"Когда платёж по кредиту? Срочно!","intent":"loan_payment","priority":"normal"}
+{"case_id":"loan_payment_17","text":"Хочу погасить займ Срочно!","intent":"loan_payment","priority":"normal"}
+{"case_id":"loan_payment_18","text":"В какой день следующий взнос? Срочно!","intent":"loan_payment","priority":"normal"}
+{"case_id":"loan_payment_19","text":"Где посмотреть погашение? Срочно!","intent":"loan_payment","priority":"normal"}
+{"case_id":"loan_payment_20","text":"Вопрос по рассрочке Срочно!","intent":"loan_payment","priority":"normal"}
+{"case_id":"other_01","text":"Где найти ближайший офис?","intent":"other","priority":"normal"}
+{"case_id":"other_02","text":"Как сменить язык приложения?","intent":"other","priority":"normal"}
+{"case_id":"other_03","text":"Кто отвечает за поддержку?","intent":"other","priority":"normal"}
+{"case_id":"other_04","text":"Спасибо за помощь!","intent":"other","priority":"normal"}
+{"case_id":"other_05","text":"Как узнать график работы?","intent":"other","priority":"normal"}
+{"case_id":"other_06","text":"Где найти ближайший офис? Подскажите, пожалуйста.","intent":"other","priority":"normal"}
+{"case_id":"other_07","text":"Как сменить язык приложения? Подскажите, пожалуйста.","intent":"other","priority":"normal"}
+{"case_id":"other_08","text":"Кто отвечает за поддержку? Подскажите, пожалуйста.","intent":"other","priority":"normal"}
+{"case_id":"other_09","text":"Спасибо за помощь! Подскажите, пожалуйста.","intent":"other","priority":"normal"}
+{"case_id":"other_10","text":"Как узнать график работы? Подскажите, пожалуйста.","intent":"other","priority":"normal"}
+{"case_id":"other_11","text":"Где найти ближайший офис? Нужна помощь.","intent":"other","priority":"normal"}
+{"case_id":"other_12","text":"Как сменить язык приложения? Нужна помощь.","intent":"other","priority":"normal"}
+{"case_id":"other_13","text":"Кто отвечает за поддержку? Нужна помощь.","intent":"other","priority":"normal"}
+{"case_id":"other_14","text":"Спасибо за помощь! Нужна помощь.","intent":"other","priority":"normal"}
+{"case_id":"other_15","text":"Как узнать график работы? Нужна помощь.","intent":"other","priority":"normal"}
+{"case_id":"other_16","text":"Где найти ближайший офис? Срочно!","intent":"other","priority":"normal"}
+{"case_id":"other_17","text":"Как сменить язык приложения? Срочно!","intent":"other","priority":"normal"}
+{"case_id":"other_18","text":"Кто отвечает за поддержку? Срочно!","intent":"other","priority":"normal"}
+{"case_id":"other_19","text":"Спасибо за помощь! Срочно!","intent":"other","priority":"normal"}
+{"case_id":"other_20","text":"Как узнать график работы? Срочно!","intent":"other","priority":"normal"}
