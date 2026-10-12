@@ -1,5 +1,7 @@
 # LLM Research Lab — synthetic, reproducible experiments
 
+**[Research protocol, baselines, results and limitations](RESEARCH_PROTOCOL_AND_RESULTS.md)** — a short review of the verified experiments and what they do/do not prove.
+
 Student research portfolio aimed at the **LLM Researcher (Risk Modeling)** internship. This code is an educational collection of independent, small experiments, not a production agent and **not Sberbank software**. All policies/data are artificial.
 
 ## Implementations
