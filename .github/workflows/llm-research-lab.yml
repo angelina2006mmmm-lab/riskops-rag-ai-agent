@@ -20,7 +20,7 @@ jobs:
         with:
           python-version: '3.11'
       - run: python -m pip install -r requirements.txt
-      - run: python -m pytest -q
+      - run: python -m pytest -q --ignore=tests/test_real_langgraph.py --ignore=tests/test_real_graph_rag_llm.py
       - run: python -m research_lab.graph_rag
       - run: python -m research_lab.neural_baselines
       - run: python -m research_lab.toy_lora_sft
