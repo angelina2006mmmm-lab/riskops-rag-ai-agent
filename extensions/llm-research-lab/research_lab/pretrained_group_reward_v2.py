@@ -60,7 +60,7 @@ def experiment(steps=120,output="reports/pretrained_group_reward_v2.json"):
   now_probs=logp_model.exp()
   new_behavior=.85*now_probs+.15/2
   ratios=(torch.log(new_behavior.gather(1,actions).clamp_min(1e-8))-prior_logp).exp()
-  surrogate=torch.minimum(ratios*adv,ratios.clamp(.8,1.2)*adv).mean()
+  surrogate=torch.minimum(ratios*advantage,ratios.clamp(.8,1.2)*advantage).mean()
   kl=(now_probs*(logp_model-ref_probs.log())).sum(1).mean()
   loss=-surrogate+.001*kl
   optim.zero_grad();loss.backward();torch.nn.utils.clip_grad_norm_((p for p in model.parameters() if p.requires_grad),1.0);optim.step()
