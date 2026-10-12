@@ -1,0 +1,10 @@
+{"query":"supplier","as_of":"2026-10-01","expected_ids":["SUP-01","ESG-01"],"abstain":false}
+{"query":"outage","as_of":"2025-10-01","expected_ids":["SUP-01"],"abstain":false}
+{"query":"incident","as_of":"2026-10-01","expected_ids":["INC-01"],"abstain":false}
+{"query":"credit","as_of":"2026-10-01","expected_ids":["CRD-01"],"abstain":false}
+{"query":"fraud","as_of":"2026-10-01","expected_ids":["FRD-01"],"abstain":false}
+{"query":"esg","as_of":"2026-10-01","expected_ids":["ESG-01"],"abstain":false}
+{"query":"downtime_minutes","as_of":"2026-10-01","expected_ids":["INC-01"],"abstain":false}
+{"query":"unknown_ontology","as_of":"2026-10-01","expected_ids":[],"abstain":true}
+{"query":"supplier","as_of":"2024-05-01","expected_ids":[],"abstain":true}
+{"query":"","as_of":"2026-10-01","expected_ids":[],"abstain":true}

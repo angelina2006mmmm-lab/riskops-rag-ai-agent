@@ -1,5 +1,10 @@
 # RiskOps RAG + AI Agent
 
+## Latest: LLM Agent Quality & Safety
+
+[Reproducible agent evaluation and real two-tool LangGraph](extensions/llm-research-lab/quality_safety/README.md) — synthetic retrieval/citation benchmarks, prompt-injection suite and safe monitoring. Not production certification.
+
+
 ## New: LLM Research Lab — reproducible synthetic research
 
 **[LLM Research Lab: graph-based retrieval, RNN/Transformer, toy LoRA-SFT, grouped reward RL, algorithms](extensions/llm-research-lab/README.md)**

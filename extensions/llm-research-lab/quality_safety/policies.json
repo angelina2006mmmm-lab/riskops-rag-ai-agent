@@ -1,0 +1,62 @@
+[
+  {
+    "id": "SUP-01",
+    "version": 1,
+    "valid_from": "2025-01-01",
+    "entities": [
+      "supplier",
+      "outage"
+    ],
+    "text": "Synthetic supplier 2025 outage escalation after 90m"
+  },
+  {
+    "id": "SUP-01",
+    "version": 2,
+    "valid_from": "2026-01-01",
+    "entities": [
+      "supplier",
+      "outage"
+    ],
+    "text": "Synthetic supplier 2026 outage escalation after 120m"
+  },
+  {
+    "id": "INC-01",
+    "version": 1,
+    "valid_from": "2025-01-01",
+    "entities": [
+      "incident",
+      "downtime_minutes"
+    ],
+    "text": "Incident response stores evidence"
+  },
+  {
+    "id": "ESG-01",
+    "version": 1,
+    "valid_from": "2025-01-01",
+    "entities": [
+      "esg",
+      "supplier"
+    ],
+    "text": "ESG monitoring of supplier reports"
+  },
+  {
+    "id": "CRD-01",
+    "version": 1,
+    "valid_from": "2025-01-01",
+    "entities": [
+      "credit",
+      "default"
+    ],
+    "text": "Credit monitoring of defaults"
+  },
+  {
+    "id": "FRD-01",
+    "version": 1,
+    "valid_from": "2025-01-01",
+    "entities": [
+      "fraud",
+      "transaction"
+    ],
+    "text": "Fraud monitoring for anomalous transactions"
+  }
+]
