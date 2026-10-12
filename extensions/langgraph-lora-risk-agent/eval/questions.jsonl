@@ -1,0 +1,10 @@
+{"question":"IT service downtime 135 minutes","indicator":"downtime_minutes","value":135,"expected_status":"grounded_demo","expected_source":"OPS-01"}
+{"question":"fraud alerts suspicious transactions per hour","indicator":"fraud_alerts","value":9,"expected_status":"grounded_demo","expected_source":"OPS-02"}
+{"question":"Supplier outage backup service","indicator":"supplier_outage_minutes","value":75,"expected_status":"grounded_demo","expected_source":"OPS-04"}
+{"question":"Data access unauthorized security triage","expected_status":"grounded_demo","expected_source":"OPS-03"}
+{"question":"Risk assessments must cite policy evidence","expected_status":"grounded_demo","expected_source":"OPS-05"}
+{"question":"IT service downtime","indicator":"fraud_alerts","value":9,"expected_status":"insufficient_evidence"}
+{"question":"fraud alerts","indicator":"downtime_minutes","value":130,"expected_status":"insufficient_evidence"}
+{"question":"unfindablexyz_qqq","indicator":"fraud_alerts","value":9,"expected_status":"insufficient_evidence"}
+{"question":"IT service downtime","indicator":"downtime_minutes","value":-1,"expected_status":"insufficient_evidence"}
+{"question":"Supplier outage backup service","indicator":"missing_indicator","value":75,"expected_status":"insufficient_evidence"}
