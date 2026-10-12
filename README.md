@@ -1,5 +1,12 @@
 # RiskOps RAG + AI Agent
 
+## Engineering readiness for LLM internships (October 2026)
+
+**[LLM Engineering Readiness: Python SOLID/DI, FastAPI, Docker, Langfuse SDK v4, TRL GRPO smoke & GPU-ready example scripts](extensions/llm-engineering-readiness/README.md)**
+
+[CI: 8 tests + Docker image build and running container smoke test](https://github.com/angelina2006mmmm-lab/riskops-rag-ai-agent/actions/runs/38305842529). **TRL GRPOTrainer** completed a [one-step CPU smoke test](https://github.com/angelina2006mmmm-lab/riskops-rag-ai-agent/actions/runs/38305842262) on tiny GPT-2; further experiments are exploratory, **not evidence of improved reasoning**. vLLM/Unsloth are **GPU scripts not executed**, while Langfuse uses a test client without SaaS trace ingestion. All content is synthetic.
+
+
 ## Latest: LLM Agent Quality & Safety
 
 [Reproducible agent evaluation and real two-tool LangGraph](extensions/llm-research-lab/quality_safety/README.md) — synthetic retrieval/citation benchmarks, prompt-injection suite and safe monitoring. Not production certification.
@@ -9,7 +16,7 @@
 
 **[LLM Research Lab: graph-based retrieval, RNN/Transformer, toy LoRA-SFT, grouped reward RL, algorithms](extensions/llm-research-lab/README.md)**
 
-This is an educational reproducible set of small experiments. It **does not claim** pretrained-LLM SFT/GRPO, full GraphRAG production architecture, actual LLM reasoning improvements or production LangGraph integration. Evaluation is strictly synthetic.
+This is an educational reproducible set of small experiments. Recent extensions contain small *executed* pretrained-model LoRA SFT/DPO and a one-step TRL GRPO CPU smoke test. These do **not** establish improved real-world reasoning, industrial GraphRAG or production LangGraph integration. Evaluation is strictly synthetic.
 
 
 ## Портфолио LLM / AI Agent / Operational Risk
