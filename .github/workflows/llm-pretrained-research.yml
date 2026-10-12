@@ -5,8 +5,6 @@ on:
       - 'extensions/llm-research-lab/research_lab/pretrained_*.py'
       - '.github/workflows/llm-pretrained-research.yml'
   workflow_dispatch:
-permissions:
-  contents: write
 jobs:
   pretrained-peft-and-grouped-reward:
     runs-on: ubuntu-latest
@@ -44,13 +42,3 @@ jobs:
             extensions/llm-research-lab/reports/pretrained_group_reward.json
             extensions/llm-research-lab/artifacts/lora_adapter/**
 
-      - name: Commit measured experiment metrics
-        if: github.ref == 'refs/heads/main'
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add reports/pretrained_peft_sft.json reports/pretrained_group_reward.json
-          if ! git diff --cached --quiet; then
-            git commit -m "Record verified pretrained TinyStories-1M experiment metrics"
-            git push origin HEAD:main
-          fi
