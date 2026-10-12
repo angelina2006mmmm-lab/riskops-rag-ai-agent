@@ -1,0 +1,25 @@
+name: Temporal RAG guardrails checks
+on:
+  push:
+    paths:
+      - 'extensions/temporal-rag-guardrails/**'
+      - '.github/workflows/temporal-guardrails-ci.yml'
+  pull_request:
+    paths:
+      - 'extensions/temporal-rag-guardrails/**'
+      - '.github/workflows/temporal-guardrails-ci.yml'
+  workflow_dispatch:
+jobs:
+  pytest:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: extensions/temporal-rag-guardrails
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r requirements.txt
+      - run: python -m pytest -q
+      - run: python -m temporal_guard.evaluate
