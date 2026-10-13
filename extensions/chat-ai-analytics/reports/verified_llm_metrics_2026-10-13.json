@@ -1,0 +1,40 @@
+{
+  "experiment_date": "2026-10-13",
+  "run": "https://github.com/angelina2006mmmm-lab/riskops-rag-ai-agent/actions/runs/38372329228",
+  "artifact_name": "real-llm-chat-prompt-and-agent-metrics",
+  "source_sha": "7f83318ac5268340412eb88be4ef8338f9e4e558",
+  "dataset": "10 synthetically authored Russian chat messages; 2 per class",
+  "model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "inference": "CPU, greedy, seed 42, max_new_tokens 32",
+  "prompt_A": {
+    "accuracy": 0.6,
+    "macro_f1": 0.4667,
+    "valid_json_rate": 0.8,
+    "abstention_rate": 0.4,
+    "p50_latency_ms": 1081.35,
+    "p95_latency_ms": 1796.12
+  },
+  "prompt_B": {
+    "accuracy": 0.7,
+    "macro_f1": 0.64,
+    "valid_json_rate": 0.9,
+    "abstention_rate": 0.2,
+    "p50_latency_ms": 1327.45,
+    "p95_latency_ms": 1363.48
+  },
+  "langgraph_replay": {
+    "source": "Recorded real-LLM prompt B classifications",
+    "cases": 10,
+    "task_success_rate": 0.7
+  },
+  "deterministic_graph": {
+    "source": "PromptPolicy B regex routing, 100 synthetic cases",
+    "cases": 100,
+    "task_success_rate": 0.92
+  },
+  "test_suite": {
+    "tests_passed": 34,
+    "ci": "https://github.com/angelina2006mmmm-lab/riskops-rag-ai-agent/actions/runs/38372329185"
+  },
+  "limitations": "Very small hand-authored dataset, no independent validation, few-shot prompts not in evaluated inputs, not a randomized customer A/B test or reliable effect estimate. End-to-end LangGraph is deterministic and replays recorded real-model output."
+}
