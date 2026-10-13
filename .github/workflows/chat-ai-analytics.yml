@@ -17,13 +17,14 @@ jobs:
         with:
           python-version: '3.11'
       - name: Install pytest
-        run: python -m pip install -r requirements.txt
-      - name: Run 17 unit, contract, and SQL tests
+        run: python -m pip install -r requirements.txt 'langgraph>=0.6,<2'
+      - name: Run chat analytics, model-contract and LangGraph tests
         run: python -m pytest -q tests/
       - name: Generate offline evaluation and synthetic monitoring
         run: |
           python -m src.experiment
           python -m src.analytics
+          python -m src.agent_eval
       - uses: actions/upload-artifact@v4
         with:
           name: synthetic-chat-offline-metrics
