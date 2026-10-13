@@ -21,8 +21,8 @@ PROMPT_B = (
     "balance=account balance; card_block=lost/stolen card; "
     "transfer_status=missing transfer; loan_payment=loan payment; other=unclear. "
     "Prioritize lost or stolen card over transfers. "
-    "Example: 'Потеряла карту' -> " + '{"intent":"card_block"}' + ". "
-    "Example: 'Когда взнос по кредиту?' -> " + '{"intent":"loan_payment"}' + ". "
+    "Example: 'Не могу найти свою пластиковую карту' -> " + '{"intent":"card_block"}' + ". "
+    "Example: 'Подскажите дату следующего кредитного списания' -> " + '{"intent":"loan_payment"}' + ". "
     'Return ONLY JSON {"intent":"one_of_the_five_labels"}.'
 )
 PROMPTS_USED = {"A": PROMPT_A, "B": PROMPT_B}
