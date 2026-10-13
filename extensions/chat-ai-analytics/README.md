@@ -65,4 +65,4 @@ python -m src.analytics
 
 ## Scope
 
-No live LLM inference in the A/B comparison, no actual online randomized test, no causal treatment effect or statistical significance claim, no production monitoring or customer data. For a separately tested RAG PoC, see [RiskOps](https://github.com/angelina2006mmmm-lab/riskops-rag-ai-agent).
+The original rule-based A/B simulator does not use a real LLM; the separate Qwen experiment DOES run actual offline pretrained-model inference on 10 synthetic messages. Neither is an online randomized customer A/B test. No causal effect, statistical significance, production monitoring or customer data is claimed. For a separately tested RAG PoC, see [RiskOps](https://github.com/angelina2006mmmm-lab/riskops-rag-ai-agent).
