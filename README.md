@@ -1,5 +1,10 @@
 # RiskOps RAG + AI Agent
 
+## Chat AI Analytics — measured LLM experiments (October 2026)
+
+**[Chat AI Analytics Lab](extensions/chat-ai-analytics/README.md)**: 100 labelled synthetic Russian chat messages, rule-based routing baseline, SQL window monitoring, and **real pretrained Qwen2.5-0.5B prompt comparison** (same ten synthetic cases; accuracy 0.60 / 0.70 for prompt A/B). A separate **real LangGraph graph** routes to deterministic specialists and verifies synthetic sources, with 0.92 task success on 100 synthetic cases. [34 tests passed](https://github.com/angelina2006mmmm-lab/riskops-rag-ai-agent/actions/runs/38372329185) and [real-model CI passed](https://github.com/angelina2006mmmm-lab/riskops-rag-ai-agent/actions/runs/38372329228). No real customer A/B test, production multi-agent system or measured product improvement.
+
+
 ## Engineering readiness for LLM internships (October 2026)
 
 **[LLM Engineering Readiness: Python SOLID/DI, FastAPI, Docker, Langfuse SDK v4, TRL GRPO smoke & GPU-ready example scripts](extensions/llm-engineering-readiness/README.md)**
